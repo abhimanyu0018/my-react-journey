@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    width: 40%;
+    margin: 10rem auto;
+    background-color: aqua;
+    padding: 1rem;
+    border-radius: 20px; 
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+    width: 100%;
+}
+
+input[type="text"]{
+    color: blue;
+    font-size: 2rem;
+    border: none;
+    box-shadow: none;
+}
+
+.copy{
+    padding: 0 1rem;
+    margin-left: 4px;
+}
