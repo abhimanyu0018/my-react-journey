@@ -10,7 +10,7 @@
     align-items: center ;
     width: 40%;
     margin: 10rem auto;
-    background-color: aqua;
+    background-color: #626C66;
     padding: 1rem;
     border-radius: 20px; 
 }
@@ -20,16 +20,35 @@
     justify-content: center;
     /* background-color: black; */
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 input[type="text"]{
-    color: blue;
+    color: black;
     font-size: 2rem;
     border: none;
     box-shadow: none;
+    border-radius: 20px;
+    padding-left: 1rem;
 }
 
 .copy{
     padding: 0 1rem;
     margin-left: 4px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.copy:hover {
+    background-color: #ACA885;
+}
+
+.lengthLabel{
+    padding-right:1rem;
+}
+
+input[type="checkbox"]{
+    padding: 0 2rem;
+    background-color: aqua;
 }
