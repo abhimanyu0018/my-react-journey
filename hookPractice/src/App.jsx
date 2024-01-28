@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "./App.css";
 
 function App() {
@@ -7,7 +7,32 @@ function App() {
   const [email,setEmail] = useState("")
   const [gender, setgender] = useState("");
 
+  const [isJS,setIsJS] = useState(false)
+  const [isReactJS,setRectJS] = useState(false)
+  const [isNextJS,setNextJS] = useState(false)
+  const [skill,setSkill] = useState('')
+
   const [mobNo,setMobNo] = useState("+91")
+
+
+  const setSkillFn = () =>{
+    let skillTempo = ""
+    if(isJS){
+      skillTempo +="JS,"
+    }
+    if(isReactJS) skillTempo+="RectJS,"
+
+    if(isNextJS) skillTempo +="NextJS"
+
+    setSkill(skillTempo)
+
+
+  }
+
+
+  useEffect(() =>{
+    setSkillFn()
+  },[isJS,isReactJS,isNextJS])
 
   return (
     <>
@@ -65,11 +90,17 @@ function App() {
             <br />
             <label htmlFor="">Skill:</label>
 
-            <input type="checkbox" name="skill" value={"JS"} />
+            <input type="checkbox" name="skill" onClick={()=>{
+              setIsJS((prev) => !prev)
+            }} value={"JS"} />
             <label htmlFor="">JS</label>
-            <input type="checkbox" name="skill" value={"RectJS"} />
+            <input type="checkbox" name="skill" onClick={()=>{
+              setRectJS((prev) => !prev)
+            }} value={"RectJS"} />
             <label htmlFor="">RectJS</label>
-            <input type="checkbox" name="skill" value={"NextJS"} />
+            <input type="checkbox" name="skill" onClick={()=>{
+              setNextJS((prev) => !prev)
+            }} value={"NextJS"} />
             <label htmlFor="">NextJS</label>
 
             <br />
@@ -108,12 +139,7 @@ function App() {
             <br />
             <label htmlFor="">Skill:</label>
 
-            <input type="checkbox" name="skill" value={"JS"} />
-            <label htmlFor="">JS</label>
-            <input type="checkbox" name="skill" value={"RectJS"} />
-            <label htmlFor="">RectJS</label>
-            <input type="checkbox" name="skill" value={"NextJS"} />
-            <label htmlFor="">NextJS</label>
+            <input type="text" value={skill} />
 
             <br />
 
@@ -129,6 +155,7 @@ function App() {
             <input type="text" maxLength={10} />
           </form>
         </div>
+
       </div>
     </>
   );
