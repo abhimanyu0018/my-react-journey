@@ -12,7 +12,8 @@ function App() {
   const [isNextJS,setNextJS] = useState(false)
   const [skill,setSkill] = useState('')
 
-  const [mobNo,setMobNo] = useState("+91")
+  const [mobNo,setMobNo] = useState("")
+  const [code,setCode] = useState('+91')
 
 
   const setSkillFn = () =>{
@@ -106,7 +107,9 @@ function App() {
             <br />
 
             <label htmlFor="">Mobile: </label>
-            <select name="code" id="">
+            <select name="code" onChange={(e) => {
+              setCode(e.target.value)
+            }}>
               <option value="+91" defaultChecked>
                 +91
               </option>
@@ -114,7 +117,9 @@ function App() {
               <option value="+92">+92</option>
               <option value="+90">+90</option>
             </select>
-            <input type="text" maxLength={10} />
+            <input type="text" maxLength={10} onChange={(e) => {
+              setMobNo(e.target.value)
+            }} />
           </form>
         </div>
 
@@ -144,7 +149,7 @@ function App() {
             <br />
 
             <label htmlFor="">Mobile: </label>
-            <select name="code" id="">
+            <select name="code" id="" value={code}>
               <option value="+91" defaultChecked>
                 +91
               </option>
@@ -152,7 +157,7 @@ function App() {
               <option value="+92">+92</option>
               <option value="+90">+90</option>
             </select>
-            <input type="text" maxLength={10} />
+            <input type="text" maxLength={10} value={mobNo} />
           </form>
         </div>
 
