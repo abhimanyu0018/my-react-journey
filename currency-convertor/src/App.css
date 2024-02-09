@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15% auto;
+    border: 1px solid black;
+    width: 30%;
+    padding: 2rem;
+}
+
+.component{
+ 
+}
