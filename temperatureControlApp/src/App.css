@@ -1,0 +1,53 @@
+.container{
+    width: 20%;
+    margin: 10% auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 30vh;
+    display: flex;
+    background-color: #8EB19D;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.temperatureBox{
+    border: 3px solid black;
+    font-size: 2rem;
+    width: 154px;
+    height: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* padding: 1rem; */
+}
+
+.normal{
+    background-color: lightskyblue;
+}
+
+.hot{
+    background-color: orange;
+}
+
+.btnBox{
+    margin-top: 1rem;
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    border: 1px solid black;
+    background-color: #436050;
+}
+
