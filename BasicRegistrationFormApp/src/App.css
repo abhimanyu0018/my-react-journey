@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+form {
+  display: flex;
+  border: 1px solid black;
+  width: 30%;
+  margin: 10% auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  height: 300px;
+  flex-direction: column;
+}
+
+input[type='text']{
+  font-size: 2rem;
+  border-radius: 20px;
+  border: none;
+  margin: 4px;
+  padding: 2px 8px;
+}
+
+button[type="submit"]{
+  font-size: 2rem;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 4px 15px;
+  cursor: pointer;
+  
+}
+
+button[type="submit"]:hover {
+  background-color: bisque;
+  border: 1px solid black;
+}
+
+.submitted {
+  font-size: 2rem;
+  background-color: lightgreen;
+  padding: 4px 8px;
+  text-transform: capitalize;
+}
