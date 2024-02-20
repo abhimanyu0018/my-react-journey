@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import cartContext from "../contexts/CartContext";
+import {cartContext} from "../contexts/CartContext";
 import "../App.css";
 
 const Item = (props) => {
@@ -16,7 +16,7 @@ const Item = (props) => {
       <div className="btn-box">
         <button
           onClick={() => {
-            cart.setCartItems([...cartItems,{ name: props.name,price: props.price}])
+            cart.setCartItems([...cart.cartItems,{ name: props.name,price: props.price}])
           }}
         >
           Add

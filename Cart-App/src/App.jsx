@@ -9,9 +9,9 @@ function App() {
   return (
    <>
       <div>
-      <Item name="Earphone" price="1000"/>
-      {/* <Item name="Mobile" price="20000"/>
-      <Item name="Laptop" price="55000"/> */}
+      <Item name="Earphone" price={1000}/>
+      <Item name="Mobile" price={20000}/>
+      <Item name="Laptop" price={55000}/>
       </div>
       <hr />
 
