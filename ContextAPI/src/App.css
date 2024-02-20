@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.btn-box {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
