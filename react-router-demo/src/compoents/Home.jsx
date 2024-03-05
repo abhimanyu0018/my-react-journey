@@ -7,8 +7,9 @@ function Home() {
         <h1>Home page</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, ea?</p>
         <ul>
-                    <Link to="/about">About</Link>
+                   
 
+           <li>item1</li>
            <li>item2</li>
            <li>item3</li>
            <li>item4</li>
